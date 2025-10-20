@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background: #dcb1f3d9;
+    margin: 0px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    background-color: #001c29;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 2;
+  }
+
+  .navbar h1 {
+    color: white;
+    font-size: 24px;
+  }
+
+  .navbar img {
+    width: 38px;
+    cursor: pointer;
+    margin: 20px;
+    image-resolution: 300dpi;
+  }
+
+  .navlist {
+    display: none;
+    background: #ffc107;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .navlist ul {
+    list-style: none;
+  }
+
+  .navlist ul li {
+    padding: 10px;
+  }
+
+  .navlist ul li a {
+    text-decoration: none;
+    color: blue;
+  }
+
+  .nav {
+    height: 70vh;
+    width: 100%;
+    background: url("https://ichhedana.com/Asset/Images/n9.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    align-items: end;
+  }
+
+  .navText {
+    font-size: 200px;
+    font-weight: bolder;
+    -webkit-text-stroke: 3px rgb(6, 6, 0);
+  }
+
+  .marq {
+    background: red;
+    color: white;
+    padding: 10px;
+    white-space: nowrap;
+    font-size: 25px;
+    -webkit-text-stroke: 1px black;
+  }
+
+  .btn {
+    justify-content: center;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    background: transparent;
+    margin: 0 auto;
+    display: block;
+    font-size: 24px;
+  }
+
+  .btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+  }
+
+  .btn::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #FF0000, #FF7300, #FFFB00, #48FF00,
+      #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
+
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  .btn:hover::before {
+    opacity: 1;
+  }
+
+  .btn:active::after {
+    background: transparent;
+  }
+
+  .btn:active {
+    color: #000;
+    font-weight: bold;
+  }
+
+ 
+  
+  
+  
+ 
+
+   .about {
+     margin: 30px 20px;  
+   }
+
+   .about h1 {
+    color: #621105;
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 12px;
+   }
+  .about h2 {
+    color: black;
+    font-size: 20px;
+    margin: 15px;
+   }
+   
+  .about p {
+    color: black;
+    margin: 20px;
+    line-height: 1.8;
+   }
+
+  .courses {
+    margin: 30px 20px;
+   }
+
+  .events {
+    margin: 30px 20px;
+
+   }
+
+  .events img {
+    width: 60vh;
+    height: 55vh;
+    image-resolution: 300dpi;
+  }
+
+  .events h1 {
+     text-align: center;
+     color: red;
+     background: blue;
+     border-radius: 10px;
+     -webkit-text-stroke: 1px black;
+
+    }
+  
+
+
+   .notice {
+     margin: 30px 20px;
+    }
+
+
+  .ntc {
+    color: yellow;
+    text-align: center;
+    background: purple;
+    border-radius: 10px;
+
+   }
+
+.notice-box {
+  display: flex;
+  width: 80vh;
+  height: 50vh;
+
+}
+
+
+.image-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto; /* Adjust height as needed */
+  image-resolution: 700dpi;
+}
+.slide {
+  display: none;
+  width: 100%;
+}
+.active {
+  display: block;
+}
+
+   
+  
+
+  .courses h1 {
+    color: #1b17cb;
+    text-align: center;
+    background: #36c175;
+    border-radius: 10px;
+    -webkit-text-stroke: white 0.3px;
+  }
+
+  .course-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+
+  .course-item {
+    display: flex;
+    align-items: center;
+    width: 45%; /* Adjust the width as needed */
+  }
+
+  .course-img {
+    max-width: 150px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px; /* Space between image and text */
+  }
+
+  .course-text {
+    flex-grow: 1;
+  }
+
+  .footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footerList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerList li {
+    padding: 8px 0;
+}
+
+.footerList a {
+    color: #ffc107; /* Change link color for better visibility */
+    text-decoration: none; /* Remove underline */
+}
+
+.footerList a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 14px; /* Smaller font for copyright */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .footerList li {
+        padding: 5px 0; /* Reduce padding for smaller screens */
+    }
+    .footer p {
+        font-size: 12px; /* Adjust copyright font size */
+    }
+}
+
+
+
+
+  .attribute {
+    background: #FEDDDD;
+    color: black;
+    padding: 10px;
+  }
+
+  /* Additional styles for responsiveness */
+  @media (max-width: 600px) {
+    .navbar h1 {
+      font-size: 20px;
+    }
+
+    .navText {
+      font-size: 40px;
+    }
+
+    .course-container {
+      flex-direction: column; /* Stack items on smaller screens */
+      align-items: center;
+    }
+
+    .course-item {
+      width: 90%; /* Full width for smaller screens */
+      flex-direction: column; /* Stack image and text vertically */
+      align-items: center;
+    }
+
+    .course-img {
+      margin-right: 0; /* No margin needed */
+      margin-bottom: 10px; /* Space below image */
+    }
+  }
+  
