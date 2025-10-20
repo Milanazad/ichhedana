@@ -65,7 +65,7 @@
   .nav {
     height: 70vh;
     width: 100%;
-    background: url("https://ichhedana.com/Asset/Images/n9.jpg") no-repeat center center/cover;
+    background: url("https://github.com/Milanazad/ichhedana/blob/main/Asset/Images/n9.jpg") no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -366,4 +366,5 @@
       margin-bottom: 10px; /* Space below image */
     }
   }
+
   
